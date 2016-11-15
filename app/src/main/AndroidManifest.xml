@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uk.cjmalone.usagestats"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1">
+
+    <application
+        android:allowBackup="true"
+        android:allowTaskReparenting="true"
+        android:backupInForeground="true"
+        android:description="@string/app_description"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:killAfterRestore="false"
+        android:label="@string/app_name"
+        android:resizeableActivity="true"
+        android:restoreAnyVersion="true"
+        android:supportsRtl="true">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleInstance"
+            android:parentActivityName="com.android.settings.Settings"
+            android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

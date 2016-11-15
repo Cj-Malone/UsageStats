@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Usage Stats</string>
+    <string name="app_description">Launches a hidden settings screen to display usage statistics.</string>
+</resources>
