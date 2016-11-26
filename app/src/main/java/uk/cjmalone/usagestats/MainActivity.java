@@ -8,6 +8,8 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
         Intent intent = new Intent();
         intent.setClassName("com.android.settings", "com.android.settings.UsageStatsActivity");
 
@@ -16,6 +18,5 @@ public class MainActivity extends Activity {
         startActivity(intent);
 
         finish();
-        super.onCreate(savedInstanceState);
     }
 }
